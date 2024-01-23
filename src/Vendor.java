@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.net.InetAddress;
 
 public class Vendor {
 
@@ -14,16 +15,6 @@ public class Vendor {
 
     String vehicleRegistrationPlate;
     Double vehicleConsumptionPer100Km;
-
-
-
-
-
-
-
-
-
-
-
+    InetAddress inetAddress;
 
     }
