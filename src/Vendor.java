@@ -1,5 +1,5 @@
 import java.time.LocalDate;
-import java.net.InetAddress;
+//import java.net.InetAddress;
 
 public class Vendor {
 
@@ -34,13 +34,21 @@ public class Vendor {
 
     public void avgCarrotsSold(){
         double avgQuantityPerContracts = quantityTons / numberOfNegotiatedContracts;
+        System.out.println("Average quantity of carrots sold per contract: " + avgQuantityPerContracts);
 
     }
 
-
+    //Override to see all requested parameters
     @Override
     public String toString() {
-        return name;
+        return "Name: " + name + ", " +
+               "Surname: " + surname + ", " +
+               "Date of birth: " + DateOfBirth + ", " +
+               "Number of negotiated contracts: " + numberOfNegotiatedContracts + ", " +
+               "Quantity in tons: " + quantityTons + ", " +
+               "Headquarter city: " + headquarterCity + ", " +
+               "Vehicle Consumption per 100 km: " + vehicleConsumptionPer100Km + ", " +
+               "Vehicle registration plate: " + vehicleRegistrationPlate + inetAddress;
     }
 
 }
